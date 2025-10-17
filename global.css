@@ -1,0 +1,143 @@
+/* ==========================
+   Portafolio Esteban Lizcano
+   Minimalista, profesional y artístico
+========================== */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+header .logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    justify-content: flex-end;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #fafafa;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Secciones */
+.section {
+    padding: 60px 0;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #111;
+    text-align: center;
+}
+
+.section p {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    color: #555;
+}
+
+/* Galería */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.galeria-item {
+    text-align: center;
+}
+
+.galeria-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Tamaños específicos */
+.galeria-item.horizontal img {
+    max-width: 400px;
+}
+
+.galeria-item.square img {
+    max-width: 300px;
+    height: 300px;
+}
+
+.galeria-item.vertical img {
+    max-width: 220px;
+    height: 330px;
+}
+
+/* Captions */
+.caption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul
