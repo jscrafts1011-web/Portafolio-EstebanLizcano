@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio Artístico de Esteban Lizcano. Minimalista, profesional y moderno.">
+    <title>Esteban Lizcano | Portafolio Artístico</title>
+    <link rel="stylesheet" href="SiteStyle/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Botón volver arriba -->
+    <button id="topBtn" title="Volver arriba">↑</button>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <img src="SiteImage/logo.png" alt="Logo Esteban Lizcano" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero / Bienvenida -->
+    <section class="hero fade-in">
+        <div class="container">
+            <h1>Esteban Lizcano</h1>
+            <p>Bienvenido a mi portafolio. Aquí confluyen técnica, creatividad y emoción en cada obra. Explora mis proyectos y descubre cómo transformo ideas en experiencias visuales únicas.</p>
+        </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="section fade-in">
+        <div class="container">
+            <h2>Sobre mí</h2>
+            <p>Soy Esteban Lizcano, artista visual. Mi trabajo busca transmitir sensibilidad, memoria y movimiento a través del color y la forma. Cada obra es un reflejo de experiencias y emociones personales que deseo compartir con el mundo.</p>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="section fade-in">
+        <div class="container">
+            <h2>Galería de Obras</h2>
+            <div class="galeria">
+                <!-- Horizontal -->
+                <div class="galeria-item horizontal">
+                    <img src="SiteImage/galeria1.jpg" alt="Obra Horizontal">
+                    <p class="caption">“phased” - óleo sobre lienzo</p>
+                </div>
+
+                <!-- Cuadrada -->
+                <div class="galeria-item square">
+                    <img src="SiteImage/galeria2.jpg" alt="Obra Cuadrada">
+                    <p class="caption">“josefina” - acuarela</p>
+                </div>
+
+                <!-- Vertical -->
+                <div class="galeria-item vertical">
+                    <img src="SiteImage/galeria3.jpg" alt="Obra Vertical">
+                    <p class="caption">“ensueño” - tinta y acuarela</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section fade-in">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Escríbeme a <a href="mailto:lzcno@gmail.com">lzcno@gmail.com</a> para proyectos, colaboraciones o consultas.</p>
+            <div class="social">
+                <a href="#" target="_blank">Instagram</a> | 
+                <a href="#" target="_blank">Behance</a> | 
+                <a href="#" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Esteban Lizcano. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script para botón volver arriba -->
+    <script>
+        const topBtn = document.getElementById("topBtn");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                topBtn.style.display = "block
